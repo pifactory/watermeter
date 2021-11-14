@@ -5,7 +5,7 @@
   (paper "A4")
 
   (title_block
-    (title "Water mater sensor")
+    (title "Smart Water Meter Sensor")
     (date "2021-11-07")
     (rev "1.0.0")
     (company "Copyright (c) 2021 Alexander Dvorkovyy")

@@ -1,5 +1,5 @@
 # Smart Water Meter Sensor
-[![CC BY 4.0][cc-by-shield]][cc-by]
+<a href="https://www.tindie.com/stores/pifactory_nl/?ref=offsite_badges&utm_source=sellers_advorkovyy&utm_medium=badges&utm_campaign=badge_small"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-smalls.png" alt="I sell on Tindie" width="200" height="55"></a> [![CC BY 4.0][cc-by-shield]][cc-by]
 
 Design files for making inductive sensor for reading out smart water meters.
 

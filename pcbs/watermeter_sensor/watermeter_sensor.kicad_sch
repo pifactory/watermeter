@@ -780,41 +780,38 @@
 				)
 			)
 		)
-		(symbol "Regulator_Linear_Goodies:MCP1811A"
-			(pin_names
-				(offset 0.254)
-			)
+		(symbol "Regulator_Linear:ADP7142AUJZ-1.8"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -6.35 5.715 0)
+			(property "Reference" "U2"
+				(at 0 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MCP1811A"
-				(at 0 5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(property "Value" "AP7354-18W5"
 				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.microchip.com/content/dam/mchp/documents/APID/ProductDocuments/DataSheets/MCP1811A-11B-12A-12B-Family-Data-Sheet-DS20006088C.pdf"
-				(at 0 0 0)
+			(property "Datasheet" "https://nl.mouser.com/datasheet/2/115/DIOD_S_A0010206046_1-2543502.pdf"
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -822,7 +819,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "150mA, 5.5V LDO Regulator, 1-4V Fixed Output, SOT-23"
+			(property "Description" "150mA, Low Noise, CMOS Low Dropout Regulator, Positive, 1.8V Fixed Output, TSOT-23-5"
 				(at 0 0 0)
 				(effects
 					(font
@@ -840,7 +837,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23*"
+			(property "ki_fp_filters" "TSOT?23*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -849,10 +846,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "MCP1811A_0_1"
+			(symbol "ADP7142AUJZ-1.8_0_1"
 				(rectangle
-					(start -7.62 -5.08)
-					(end 7.62 4.445)
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -862,25 +859,7 @@
 					)
 				)
 			)
-			(symbol "MCP1811A_1_1"
-				(pin power_out line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "VOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+			(symbol "ADP7142AUJZ-1.8_1_1"
 				(pin power_in line
 					(at -10.16 2.54 0)
 					(length 2.54)
@@ -891,7 +870,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -909,6 +888,24 @@
 							)
 						)
 					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 					(number "3"
 						(effects
 							(font
@@ -918,8 +915,8 @@
 					)
 				)
 				(pin no_connect line
-					(at 7.62 0 180)
-					(length 2.54) hide
+					(at 10.16 0 180)
+					(length 2.54)
 					(name "NC"
 						(effects
 							(font
@@ -927,7 +924,25 @@
 							)
 						)
 					)
-					(number "3"
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1862,7 +1877,7 @@
 		(uuid "6ac1bda9-b9d9-4946-a01f-4410f52fbeff")
 	)
 	(junction
-		(at 69.85 132.08)
+		(at 64.77 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "70b9c7ee-1056-40ce-bafa-294fc87f92cc")
@@ -1898,6 +1913,12 @@
 		(uuid "b674f799-8006-48fb-834a-ce086a781599")
 	)
 	(junction
+		(at 76.2 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de24e2ce-d331-4610-b3d7-018ae81399a2")
+	)
+	(junction
 		(at 96.52 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1918,6 +1939,10 @@
 	(no_connect
 		(at 124.46 85.09)
 		(uuid "19215cbe-d9e5-4d1c-96eb-bfdae3eac80b")
+	)
+	(no_connect
+		(at 96.52 134.62)
+		(uuid "833c08a1-ae8d-486a-835b-01fa5b525861")
 	)
 	(wire
 		(pts
@@ -2011,7 +2036,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 132.08) (xy 69.85 133.35)
+			(xy 64.77 132.08) (xy 64.77 133.35)
 		)
 		(stroke
 			(width 0)
@@ -2121,7 +2146,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 143.51) (xy 86.36 143.51)
+			(xy 64.77 143.51) (xy 86.36 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2131,7 +2156,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 140.97) (xy 69.85 143.51)
+			(xy 64.77 140.97) (xy 64.77 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2268,6 +2293,16 @@
 			(type default)
 		)
 		(uuid "9a75309e-414b-4200-97b8-abe6b66509bf")
+	)
+	(wire
+		(pts
+			(xy 76.2 132.08) (xy 76.2 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bad4cac-22bb-4d16-9f9d-f471e3189f1d")
 	)
 	(wire
 		(pts
@@ -2411,7 +2446,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 132.08) (xy 76.2 132.08)
+			(xy 64.77 132.08) (xy 76.2 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2421,7 +2456,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 132.08) (xy 69.85 132.08)
+			(xy 62.23 132.08) (xy 64.77 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3127,7 +3162,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 146.812 85.09 90)
 			(effects
 				(font
@@ -3145,7 +3180,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "5%"
 			(at 148.59 85.09 0)
 			(effects
 				(font
@@ -3332,80 +3367,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear_Goodies:MCP1811A")
-		(at 86.36 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4eb73ab3-c69d-4ba3-accf-94798f942a3c")
-		(property "Reference" "U2"
-			(at 86.36 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MCP1811A"
-			(at 86.36 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 86.36 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.microchip.com/content/dam/mchp/documents/APID/ProductDocuments/DataSheets/MCP1811A-11B-12A-12B-Family-Data-Sheet-DS20006088C.pdf"
-			(at 86.36 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 86.36 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7a26215d-74ba-4bd5-bb13-7c0b3d80b332")
-		)
-		(pin "2"
-			(uuid "7ca7c999-ee96-43a4-8dbc-a546b0e9a53e")
-		)
-		(pin "3"
-			(uuid "25b3815d-7451-4939-ad77-04765c3bef49")
-		)
-		(pin "3"
-			(uuid "25b3815d-7451-4939-ad77-04765c3bef4a")
-		)
-		(instances
-			(project ""
-				(path "/afaee055-9392-4ae6-aa7e-cc2770462548"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+1V8")
 		(at 111.76 73.66 0)
 		(unit 1)
@@ -3547,7 +3508,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 67.31 132.08 90)
+		(at 62.23 132.08 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3556,7 +3517,7 @@
 		(fields_autoplaced yes)
 		(uuid "657429f5-7caa-407e-88e9-13dbaacd407f")
 		(property "Reference" "#PWR01"
-			(at 71.12 132.08 0)
+			(at 66.04 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3565,7 +3526,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 63.5 132.0799 90)
+			(at 58.42 132.0799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3574,7 +3535,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 132.08 0)
+			(at 62.23 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3583,7 +3544,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 132.08 0)
+			(at 62.23 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3592,7 +3553,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 67.31 132.08 0)
+			(at 62.23 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3821,7 +3782,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "C0G 5% 50V"
+			(at 81.28 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "BOM" "C0G 5% 50V"
 			(at 81.28 82.55 0)
 			(effects
 				(font
@@ -3840,6 +3810,93 @@
 			(project ""
 				(path "/afaee055-9392-4ae6-aa7e-cc2770462548"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:ADP7142AUJZ-1.8")
+		(at 86.36 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91a0e0d4-4282-4612-b5da-f8704e9aea9f")
+		(property "Reference" "U2"
+			(at 86.36 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AP7354-18W5"
+			(at 86.36 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-5"
+			(at 86.36 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://nl.mouser.com/datasheet/2/115/DIOD_S_A0010206046_1-2543502.pdf"
+			(at 86.36 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "150mA, Low Noise, CMOS Low Dropout Regulator, Positive, 1.8V Fixed Output, TSOT-23-5"
+			(at 86.36 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "BOM" ""
+			(at 86.36 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "cf498a87-a8a6-4022-bcba-6ac7d740b861")
+		)
+		(pin "4"
+			(uuid "028147e9-f890-4ad1-afd9-7cf62d9b37c9")
+		)
+		(pin "2"
+			(uuid "f5a85a04-3360-4563-80d9-c07c2809574a")
+		)
+		(pin "1"
+			(uuid "8d0d1696-778e-448b-b8d3-fb33d65d4aae")
+		)
+		(pin "3"
+			(uuid "e88f8815-af73-4578-8806-ff542f858001")
+		)
+		(instances
+			(project ""
+				(path "/afaee055-9392-4ae6-aa7e-cc2770462548"
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -4112,7 +4169,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 101.2952 140.97 0)
 			(effects
 				(font
@@ -4130,7 +4187,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "X7R 10% 6.3V"
+			(at 100.33 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "BOM" "X7R 10% 6.3V"
 			(at 100.33 137.16 0)
 			(effects
 				(font
@@ -4181,7 +4247,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 136.652 85.09 90)
 			(effects
 				(font
@@ -4199,7 +4265,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "5%"
 			(at 138.43 85.09 0)
 			(effects
 				(font
@@ -4266,7 +4332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "X7R 5% 50V"
 			(at 102.87 106.68 0)
 			(effects
 				(font
@@ -4292,7 +4358,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 69.85 137.16 0)
+		(at 64.77 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4301,7 +4367,7 @@
 		(fields_autoplaced yes)
 		(uuid "dc73f12d-940a-44ae-86b7-1a600e550ccb")
 		(property "Reference" "C4"
-			(at 73.66 135.8899 0)
+			(at 68.58 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4310,7 +4376,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 73.66 138.4299 0)
+			(at 68.58 138.4299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4318,8 +4384,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 70.8152 140.97 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 65.7352 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4328,7 +4394,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 137.16 0)
+			(at 64.77 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4336,8 +4402,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 69.85 137.16 0)
+		(property "Description" "X7R 10% 6.3V"
+			(at 64.77 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4406,7 +4472,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "C0G 5% 50V"
+			(at 81.28 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "BOM" "C0G 5% 50V"
 			(at 81.28 100.33 0)
 			(effects
 				(font

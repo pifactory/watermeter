@@ -59,7 +59,30 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|124000000|86500000|38ede83a-47d3-4534-af17-e1597bcf0c01|150a7a38-8264-4673-8ffb-630d8b671fa7",
+        "clearance|124000000|86500000|d5c95da3-c32f-4f46-be63-4d68aa00d89b|14cc86bc-658e-4574-9773-4aea0cdd6f1c",
+        "clearance|124000000|95500000|42f7a9d7-98c1-46d3-b8bb-cf02d1b72c0a|112a5648-a719-46cd-97b7-2f336b53d4d1",
+        "clearance|124000000|95500000|6680e062-d8f1-4d1c-8396-6d59b4375848|350a1876-6eb5-495c-8487-063c1cca928f",
+        "clearance|124254000|86500000|38ede83a-47d3-4534-af17-e1597bcf0c01|60aac122-9ad5-43c3-8900-9a596d02e6b4",
+        "clearance|124254000|86500000|38ede83a-47d3-4534-af17-e1597bcf0c01|632008b3-eecf-4afa-83a9-cf5262c0cd9e",
+        "clearance|124254000|86500000|d5c95da3-c32f-4f46-be63-4d68aa00d89b|07ab21eb-9381-49bf-942f-b5ed30b15a68",
+        "clearance|124254000|86500513|d5c95da3-c32f-4f46-be63-4d68aa00d89b|673ec6f7-ac1c-4f92-94d7-3e64bf945730",
+        "clearance|124254000|95500000|42f7a9d7-98c1-46d3-b8bb-cf02d1b72c0a|12289e9f-ba5b-4af2-9cd8-7cd472d2b2c3",
+        "clearance|124254000|95500000|6680e062-d8f1-4d1c-8396-6d59b4375848|1fbda42d-75f2-4b72-8e57-183d991bb990",
+        "clearance|124254000|95500000|6680e062-d8f1-4d1c-8396-6d59b4375848|8a21770d-6838-45a8-9fb2-025db29eacaf",
+        "clearance|124254000|95500513|42f7a9d7-98c1-46d3-b8bb-cf02d1b72c0a|f277db86-db30-48c4-9563-4a9ac88ca7a8",
+        "clearance|127300000|86500000|94ec2e9a-2081-4cdd-b1bb-e62606f9ec45|73e5e255-2d07-45fb-b186-3b64f18c5b3a",
+        "clearance|127300000|86500000|94ec2e9a-2081-4cdd-b1bb-e62606f9ec45|83decf57-36fd-47f8-8351-35d99cffef1d",
+        "clearance|127300000|95500000|50748b72-2a18-4403-b2b7-137e4e0c061b|718f63d5-499d-437e-aad4-3c8cd327a435",
+        "clearance|127300000|95500000|50748b72-2a18-4403-b2b7-137e4e0c061b|a4927695-00fd-4420-8b40-987f8805b3d2",
+        "solder_mask_bridge|127300000|86500000|73e5e255-2d07-45fb-b186-3b64f18c5b3a|94ec2e9a-2081-4cdd-b1bb-e62606f9ec45",
+        "solder_mask_bridge|127300000|86500000|83decf57-36fd-47f8-8351-35d99cffef1d|94ec2e9a-2081-4cdd-b1bb-e62606f9ec45",
+        "solder_mask_bridge|127300000|95500000|718f63d5-499d-437e-aad4-3c8cd327a435|50748b72-2a18-4403-b2b7-137e4e0c061b",
+        "solder_mask_bridge|127300000|95500000|a4927695-00fd-4420-8b40-987f8805b3d2|50748b72-2a18-4403-b2b7-137e4e0c061b",
+        "starved_thermal|114875000|93862500|83d9f5ed-d1cf-48bf-8b12-3c473337ce5b|384fc893-c50a-4c19-b967-37fb09c8d9e1|F.Cu",
+        "starved_thermal|118125000|88137500|83d9f5ed-d1cf-48bf-8b12-3c473337ce5b|5df1344b-2a0f-4884-a499-4df4b5237f87|F.Cu"
+      ],
       "meta": {
         "version": 2
       },
@@ -554,11 +577,47 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "BOM",
+          "name": "BOM",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Params",
+          "name": "Sim.Params",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -621,7 +680,7 @@
   ],
   "text_variables": {
     "BOARD_NAME": "Smart Water Meter Sensor",
-    "MOD_DATE": "2021-11-23",
-    "VERSION": "1.0.1"
+    "MOD_DATE": "2024-08-07",
+    "VERSION": "1.1.0"
   }
 }

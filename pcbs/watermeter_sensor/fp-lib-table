@@ -1,3 +1,4 @@
 (fp_lib_table
-  (lib (name "pcb_coils")(type "KiCad")(uri "${KICAD6_GOODIES}/footprints/pcb_coils.pretty")(options "")(descr ""))
+  (version 7)
+  (lib (name "pcb_coils")(type "KiCad")(uri "${KICAD_GOODIES}/footprints/pcb_coils.pretty")(options "")(descr ""))
 )

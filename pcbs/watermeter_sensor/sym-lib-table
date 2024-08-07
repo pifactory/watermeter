@@ -1,4 +1,5 @@
 (sym_lib_table
-  (lib (name "Regulator_Linear_Goodies")(type "KiCad")(uri "${KICAD6_GOODIES}/symbols/Regulator_Linear_Goodies.kicad_sym")(options "")(descr ""))
-  (lib (name "Sensor_Proximity_Goodies")(type "KiCad")(uri "${KICAD6_GOODIES}/symbols/Sensor_Proximity_Goodies.kicad_sym")(options "")(descr ""))
+  (version 7)
+  (lib (name "Regulator_Linear_Goodies")(type "KiCad")(uri "${KICAD_GOODIES}/symbols/Regulator_Linear_Goodies.kicad_sym")(options "")(descr ""))
+  (lib (name "Sensor_Proximity_Goodies")(type "KiCad")(uri "${KICAD_GOODIES}/symbols/Sensor_Proximity_Goodies.kicad_sym")(options "")(descr ""))
 )

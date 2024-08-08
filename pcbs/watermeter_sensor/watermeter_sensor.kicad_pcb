@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(general
-		(thickness 1.67)
+		(thickness 1.579)
 		(legacy_teardrops no)
 	)
 	(paper "A4")
@@ -48,6 +48,7 @@
 			(layer "F.SilkS"
 				(type "Top Silk Screen")
 				(color "White")
+				(material "Peters SD2692")
 			)
 			(layer "F.Paste"
 				(type "Top Solder Paste")
@@ -56,8 +57,8 @@
 				(type "Top Solder Mask")
 				(color "Green")
 				(thickness 0.025)
-				(material "Peters AS 2467 SM-DG")
-				(epsilon_r 3.6)
+				(material "Elpemer AS 2467 SM-DG")
+				(epsilon_r 3.7)
 				(loss_tangent 0)
 			)
 			(layer "F.Cu"
@@ -66,10 +67,11 @@
 			)
 			(layer "dielectric 1"
 				(type "core")
-				(thickness 1.55)
-				(material "Technolam UV Block FR-4-86")
-				(epsilon_r 4.4)
-				(loss_tangent 0.013)
+				(color "FR4 natural")
+				(thickness 1.459)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
 			)
 			(layer "B.Cu"
 				(type "copper")
@@ -79,8 +81,8 @@
 				(type "Bottom Solder Mask")
 				(color "Green")
 				(thickness 0.025)
-				(material "Peters AS 2467 SM-DG")
-				(epsilon_r 3.6)
+				(material "Elpemer AS 2467 SM-DG")
+				(epsilon_r 3.7)
 				(loss_tangent 0)
 			)
 			(layer "B.Paste"
@@ -89,8 +91,9 @@
 			(layer "B.SilkS"
 				(type "Bottom Silk Screen")
 				(color "White")
+				(material "Peters SD2692")
 			)
-			(copper_finish "None")
+			(copper_finish "ENIG")
 			(dielectric_constraints no)
 		)
 		(pad_to_mask_clearance 0)

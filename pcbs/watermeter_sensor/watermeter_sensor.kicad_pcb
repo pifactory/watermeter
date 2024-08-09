@@ -1532,7 +1532,7 @@
 		(path "/42f53630-0faf-4424-a000-72641d00e4bc")
 		(sheetname "Root")
 		(sheetfile "watermeter_sensor.kicad_sch")
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -1.46 0)
 			(end -0.7 0)
@@ -2168,7 +2168,7 @@
 		(path "/7099e8db-ea1e-46ea-8d21-e8c34ea62552")
 		(sheetname "Root")
 		(sheetfile "watermeter_sensor.kicad_sch")
-		(attr through_hole exclude_from_bom)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -1.46 0)
 			(end -0.7 0)
@@ -4120,7 +4120,7 @@
 		(path "/056d3c69-3120-4347-abd9-5713e1565f22")
 		(sheetname "Root")
 		(sheetfile "watermeter_sensor.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files)
 		(fp_line
 			(start 1.33 1.27)
 			(end 1.33 14.03)
